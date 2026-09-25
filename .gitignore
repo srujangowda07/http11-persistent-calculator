@@ -1,0 +1,15 @@
+# Binaries
+server
+server.exe
+test_client
+test_client.exe
+
+# Object files
+*.o
+*.obj
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+build/
