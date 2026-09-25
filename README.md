@@ -92,14 +92,16 @@ curl -v "http://localhost:8080/add?a=2&b=3"
 curl -v "http://localhost:8080/sub?a=10&b=4"
 curl -v "http://localhost:8080/mul?a=6&b=7"
 curl -v "http://localhost:8080/div?a=9&b=3"
+curl -v "http://localhost:8080/pow?a=2&b=8"
 
 # Error handling (400 Bad Request)
 curl -v "http://localhost:8080/div?a=1&b=0"
+curl -v "http://localhost:8080/pow?a=2&b=-1"
 curl -v "http://localhost:8080/add?a=x&b=3"
 curl -v "http://localhost:8080/add?a=5"
 
 # Unknown endpoint (404 Not Found)
-curl -v "http://localhost:8080/pow?a=2&b=3"
+curl -v "http://localhost:8080/mod?a=5&b=2"
 
 # Unsupported method (405 Method Not Allowed)
 curl -v -X POST "http://localhost:8080/add?a=2&b=3"
