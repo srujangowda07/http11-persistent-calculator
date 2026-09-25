@@ -2,7 +2,7 @@
 
 A simple C++ calculator HTTP server built using raw POSIX TCP sockets. It handles multiple HTTP/1.1 requests over a single persistent TCP connection.
 
-## What the Project Does
+## What this Does
 
 This project implements a basic HTTP/1.1 calculator server that performs arithmetic calculations using raw TCP sockets. The server keeps the client connection open across multiple requests rather than closing the socket after sending each response.
 
